@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element ={authUser ?<HomePage/> : <Navigate to="/login"/>}/>
         <Route path="/signup" element ={!authUser ?<SingUpPage/> : <Navigate to="/"/>}/>
-        <Route path="/setting" element ={<SettingPage/>}/>
+        <Route path="/settings" element ={<SettingPage/>}/>
         <Route path="/profile" element ={authUser ?<ProfilePage/> : <Navigate to="/login"/>}/>
         <Route path="/login" element ={!authUser ?<LoginPage/> : <Navigate to="/"/>}/>
       </Routes>
